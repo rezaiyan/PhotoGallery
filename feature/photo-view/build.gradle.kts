@@ -42,6 +42,7 @@ android {
 dependencies {
 
     // Compose
+    implementation(project(":domain"))
     implementation(project(":core:compose"))
     implementation(libs.compose.activity)
     implementation(platform(libs.compose.bom))
@@ -59,6 +60,11 @@ dependencies {
     implementation(libs.accompanist.systemuicontroller)
     implementation(libs.accompanist.permissions)
     implementation(libs.accompanist.navigation.animation)
+
+
+    // Coil
+    implementation(libs.coil.bom)
+    implementation(libs.coil.compose)
 
     // Dagger - Hilt
     implementation(libs.androidx.hilt.navigation.compose)

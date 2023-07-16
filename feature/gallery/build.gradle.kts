@@ -35,8 +35,9 @@ android {
 dependencies {
 
     // Compose
-    implementation(project(":core:compose"))
     implementation(project(":domain"))
+    implementation(project(":core:compose"))
+    implementation(project(":feature:photo-view"))
     implementation(libs.compose.activity)
     implementation(platform(libs.compose.bom))
     implementation(libs.compose.ui)
@@ -45,6 +46,7 @@ dependencies {
     implementation(libs.compose.ui.util)
     implementation(libs.compose.material.icons.extended)
     implementation(libs.compose.material)
+    implementation(libs.compose.navigation)
 
 
     // Core - Lifecycle

@@ -2,6 +2,7 @@
 plugins {
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.kotlinAndroid)
+    id("kotlin-parcelize")
 }
 
 android {
@@ -22,4 +23,8 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
+
+    implementation(libs.retrofit.moshi)
+    implementation(libs.moshi)
+    implementation(libs.moshi.kotlin)
 }

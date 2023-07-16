@@ -3,6 +3,7 @@ package com.github.rezaiyan.gallery
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.github.rezaiyan.domain.repo.FlickrRepo
+import com.github.rezaiyan.domain.model.Photo
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -49,7 +50,7 @@ internal open class GalleryViewModel @Inject constructor(private val repo: Flick
     data class GalleryUiState(
         val inputText: String = "",
         val tags: List<String> = emptyList(),
-        val photos: List<String> = emptyList(),
+        val photos: List<Photo> = emptyList(),
         val loading: Boolean = false
     )
 

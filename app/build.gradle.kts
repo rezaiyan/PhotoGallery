@@ -77,6 +77,7 @@ dependencies {
     implementation(libs.compose.ui.tooling.preview)
     implementation(libs.compose.ui.util)
     implementation(libs.compose.material.icons.extended)
+    implementation(libs.compose.navigation)
 
     // Compose - Accompanists
     implementation(libs.accompanist.systemuicontroller)
