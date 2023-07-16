@@ -14,7 +14,7 @@ The project is divided into several modules:
 
 - **:domain**: The domain module contains the repository interfaces that define the data operations for retrieving photos. It serves as an abstraction layer between the data layer and the UI layer.
 
-- **:feature:search**: This module implements the search functionality, allowing users to enter tags to search for specific photos. It includes the UI components and logic related to searching.
+- **:feature:search**: TBD
 
 - **:feature:gallery**: This module represents the main screen of the app, displaying a list of photos. It handles the UI components and logic for displaying the photos in a list or grid view.
 
