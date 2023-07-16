@@ -1,7 +1,6 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.kotlinAndroid)
-    alias(libs.plugins.kspAndroid)
     alias(libs.plugins.hiltAndroid)
     kotlin("kapt")
     id("kotlin-parcelize")
@@ -96,14 +95,6 @@ dependencies {
     implementation(libs.dagger.hilt)
     kapt(libs.dagger.hilt.compiler)
     kapt(libs.androidx.hilt.compiler)
-
-    // Glide
-    implementation(libs.glide)
-    implementation(libs.glide.compose)
-    ksp(libs.glide.compiler)
-
-    // SVG Support for Glide
-    implementation(libs.glide.svg)
 
     // Coil
     implementation(libs.coil.bom)

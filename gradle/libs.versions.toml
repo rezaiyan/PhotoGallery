@@ -2,14 +2,9 @@
 agp = "8.2.0-alpha03"
 appcompat = "1.6.1"
 coilVersion = "2.4.0"
-fuzzywuzzy = "1.4.0"
-glideCompose = "1.0.0-alpha.3"
 exifinterface = "1.3.6"
-glideSvg = "4.0.2"
-glideVersion = "4.15.1"
 kotlin = "1.8.22"
 kotlinCoroutinesVersion = "1.7.2"
-ksp = "1.8.22-1.0.11"
 core-ktx = "1.10.1"
 junit = "4.13.2"
 androidx-test-ext-junit = "1.1.5"
@@ -51,12 +46,6 @@ coil-video = { module = "io.coil-kt:coil-video" }
 coil-gif = { module = "io.coil-kt:coil-gif" }
 coil-svg = { module = "io.coil-kt:coil-svg" }
 coil-compose = { module = "io.coil-kt:coil-compose" }
-
-# Glide
-glide-compiler = { module = "com.github.bumptech.glide:ksp", version.ref = "glideVersion" }
-glide-compose = { module = "com.github.bumptech.glide:compose", version.ref = "glideCompose" }
-glide = { module = "com.github.bumptech.glide:glide", version.ref = "glideVersion" }
-glide-svg = { module = "com.github.qoqa:glide-svg", version.ref = "glideSvg" }
 
 # Compose
 compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "compose-bom" }
@@ -108,9 +97,6 @@ kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-c
 # View-based AndroidX
 material = { module = "com.google.android.material:material", version.ref = "material" }
 
-# Fuzzy Search
-fuzzywuzzy = { module = "me.xdrop:fuzzywuzzy", version.ref = "fuzzywuzzy" }
-
 # Network
 retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
 retrofit-moshi = { group = "com.squareup.retrofit2", name = "converter-moshi", version.ref = "retrofit" }
@@ -131,7 +117,6 @@ espresso-core = { group = "androidx.test.espresso", name = "espresso-core", vers
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 androidLibrary = { id = "com.android.library", version.ref = "agp" }
 kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-kspAndroid = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 roomPlugin = { id = "androidx.room", version.ref = "room" }
 hiltAndroid = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
 baselineProfilePlugin = { id = "androidx.baselineprofile", version = "1.2.0-alpha16" }
