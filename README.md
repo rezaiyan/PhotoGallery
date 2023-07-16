@@ -1,4 +1,4 @@
-# Flickr Photo Viewer
+# Photo Gallery
 
 This is a simple Android application that allows users to search for public photos using tags.
 
