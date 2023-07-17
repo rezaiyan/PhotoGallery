@@ -57,7 +57,6 @@ dependencies {
     implementation(project(":core:compose"))
     implementation(project(":feature:photo-view"))
     implementation(project(":feature:gallery"))
-    implementation(project(":feature:search"))
 
     // Core
     implementation(libs.androidx.core.ktx)

@@ -14,6 +14,4 @@ data class PhotoItem(
     val media: ImageMedia,
 )
 
-data class ImageMedia(
-    val m: String,
-)
+data class ImageMedia(val m: String)

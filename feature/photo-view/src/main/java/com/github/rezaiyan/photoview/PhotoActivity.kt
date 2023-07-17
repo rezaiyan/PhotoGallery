@@ -60,9 +60,9 @@ fun FullScreenImage(
     Box(modifier = modifier) {
         Image(
             painter = rememberAsyncImagePainter(model = imageUrl),
-            contentDescription = null,
+            contentDescription = "Full screen image",
             contentScale = ContentScale.Fit,
-            modifier = Modifier.fillMaxSize()
+            modifier = Modifier.fillMaxSize(),
         )
         IconButton(
             onClick = onCloseClicked,

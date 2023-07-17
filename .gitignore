@@ -20,6 +20,7 @@ local.properties
 /.idea/kotlinc.xml
 /.idea/gradle.xml
 /.idea/deploymentTargetDropDown.xml
+/.idea/androidTestResultsUserPreferences.xml
 /.idea/compiler.xml
 /.idea/vcs.xml
 /.idea/.name

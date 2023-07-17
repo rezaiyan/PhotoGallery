@@ -39,6 +39,7 @@ dependencies {
     implementation(project(":core:compose"))
     implementation(project(":feature:photo-view"))
     implementation(libs.compose.activity)
+    implementation(libs.viewmodel.savedstate)
     implementation(platform(libs.compose.bom))
     implementation(libs.compose.ui)
     implementation(libs.compose.ui.graphics)
@@ -80,4 +81,9 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
+
+    testImplementation(libs.kotlinx.coroutines.test)
+    testImplementation(libs.mockk)
+    testImplementation(libs.junit)
+
 }

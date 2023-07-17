@@ -14,6 +14,7 @@ import androidx.compose.material.pullrefresh.PullRefreshState
 import androidx.compose.material.pullrefresh.pullRefresh
 import androidx.compose.material.pullrefresh.rememberPullRefreshState
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
@@ -33,6 +34,13 @@ fun GalleryView(onPhotoClick: (Photo) -> Unit) {
     val viewModel = hiltViewModel<GalleryViewModel>()
     val uiState by viewModel.galleryUiState.collectAsState()
     val pullRefreshState = rememberPullRefreshState(uiState.loading, { viewModel.refresh() })
+
+    LaunchedEffect(Unit) {
+        if (uiState.photos.isEmpty()) {
+            viewModel.refresh()
+        }
+    }
+
     Scaffold(
         modifier = Modifier.fillMaxSize(),
         topBar = {

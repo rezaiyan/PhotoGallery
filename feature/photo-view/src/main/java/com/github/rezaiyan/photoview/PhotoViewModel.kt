@@ -11,7 +11,7 @@ import kotlinx.coroutines.flow.update
 import javax.inject.Inject
 
 @HiltViewModel
-internal open class PhotoViewModel @Inject constructor(savedStateHandle: SavedStateHandle) : ViewModel() {
+internal class PhotoViewModel @Inject constructor(savedStateHandle: SavedStateHandle) : ViewModel() {
 
     private val url: String = checkNotNull(savedStateHandle["url"])
     private val title: String = checkNotNull(savedStateHandle["title"])
