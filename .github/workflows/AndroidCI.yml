@@ -36,15 +36,22 @@ jobs:
       - name: Run unit tests
         run: ./gradlew test
 
+      - name: Upload unit test reports
+        if: success() || failure()
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-reports
+          path: '**/build/reports/tests'
+
       - name: Build AndroidTest apps
-        run: ./gradlew packageDemoDebug packageDemoDebugAndroidTest
+        run: ./gradlew packageDebug packageDemoDebugAndroidTest
 
       - name: Run instrumented tests with GMD
         run: ./gradlew cleanManagedDevices --unused-only &&
           ./gradlew ciDemoDebugAndroidTest -Dorg.gradle.workers.max=1
           -Pandroid.testoptions.manageddevices.emulator.gpu="swiftshader_indirect" -Pandroid.experimental.testOptions.managedDevices.emulator.showKernelLogging=true
 
-      - name: Upload test reports
+      - name: Upload ui test reports
         if: success() || failure()
         uses: actions/upload-artifact@v3
         with:
