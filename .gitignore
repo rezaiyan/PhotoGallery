@@ -23,4 +23,5 @@ local.properties
 /.idea/androidTestResultsUserPreferences.xml
 /.idea/compiler.xml
 /.idea/vcs.xml
+/.idea/codestream.xml
 /.idea/.name
